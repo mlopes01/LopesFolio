@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+.interaçao-de-menu {
+  position: fixed;
+  width: 100%;
+  margin-top: 95px;
+  text-transform: uppercase;
+}
+
+#lista-links {
+  display: none;
+  list-style: none;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+#lista-links li {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 80px;
+  border: 1px solid wheat;
+  padding-right: 50px;
+}

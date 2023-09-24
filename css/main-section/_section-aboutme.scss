@@ -1,0 +1,87 @@
+main>#main-aboutme {
+    background-image: linear-gradient(rgb(131, 131, 252), rgb(152, 152, 248), rgb(184, 184, 248), rgb(213, 213, 250));
+    display: flex;
+    flex-direction: column;
+    padding: 5% 20%;
+  }
+  
+  main>#main-aboutme>.main-aboutme-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  main>#main-aboutme>.main-aboutme-div>.main-aboutme-div-traço {
+    border: 3px solid blue;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+  }
+  
+  main>#main-aboutme>.main-aboutme-div>.main-aboutme-div-p {
+    text-align: center;
+    line-height: 130%;
+  }
+  
+  main>#main-aboutme>.main-aboutme-knowme-myskills {
+    display: flex;
+    padding-top: 7%;
+    column-gap: 4%;
+  }
+  
+  main>#main-aboutme>.main-abouteme-knowme-myskills>.main-aboutme-knowme {
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main>#main-aboutme>.main-aboutme-knowme-myskills>.main-aboutme-knowme>.main-aboutme-knowme-p1 {
+    line-height: 135%;
+    margin-bottom: 25px;
+  }
+  
+  main>#main-aboutme>.main-aboutme-knowme-myskills>.main-aboutme-knowme>.main-aboutme-knowme-p {
+    margin-bottom: 15px;
+    margin-top: 40px;
+    line-height: 135%;
+  }
+  
+  main>#main-aboutme>.main-aboutme-knowme-myskills>.main-aboutme-myskills>.main-aboutme-myskills-p {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7%;
+  }
+  
+  main>#main-aboutme>.main-aboutme-knowme-myskills>.main-aboutme-myskills>.main-aboutme-myskills-p p {
+    border-radius: 10px;
+    background-color: rgb(34, 9, 173);
+    color: white;
+    padding: 2%;
+    margin: 1%;
+  }
+  
+  main>#main-aboutme>.main-aboutme-knowme-myskills>.main-aboutme-knowme>.main-aboutme-knowme-botao {
+    width: 180px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  main>#main-aboutme>.main-aboutme-knowme-myskills>.main-aboutme-knowme>.main-aboutme-knowme-botao>p {
+    width: 180px;
+    height: 60px;
+    border-radius: 7px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    place-content: center;
+    align-items: center;
+  }
+  
+  main>#main-aboutme>.main-aboutme-knowme-myskills>.main-aboutme-knowme>.main-aboutme-knowme-botao>p:hover {
+    transition-duration: 500ms;
+    box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+    margin-bottom: 6px;
+  }

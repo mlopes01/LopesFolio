@@ -1,0 +1,305 @@
+@media (max-width: 1200px) {
+
+  header>.header-menu {
+    padding-left: 20rem;
+  }
+
+  main>.main-oi>.main-oi-div>.main-oi-div-h1 {
+    text-align: center;
+  }
+
+  main>#main-projetos {
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 95%;
+  }
+
+  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-img,
+  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-img,
+  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-img {
+    width: 550px;
+    height: 400px;
+  }
+
+
+  main>#main-contato {
+    padding: 7% 20%;
+  }
+
+  body>footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 80%;
+  }
+
+  body>footer>.footerh3nome-footerh3sociais {
+    column-gap: 50%;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+  header>.header-menu {
+    padding-left: 7.5rem;
+    font-size: 80%;
+    column-gap: 30px;
+  }
+
+  main>.main-oi {
+    padding-top: 6%;
+  }
+
+  main>.main-oi>.main-oi-sociais {
+    padding-left: 0%;
+  }
+
+  main>#main-aboutme {
+    padding: 5% 8%;
+  }
+
+  main>#main-projetos {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 98%;
+  }
+
+  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-img,
+  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-img,
+  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-img {
+    width: 450px;
+    height: 300px;
+  }
+
+  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3,
+  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3,
+  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3 {
+    width: 450px;
+    height: 350px;
+  }
+
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div {
+    font-size: 80%;
+    gap: 0px;
+  }
+
+  main>#main-contato {
+    padding: 8% 15%;
+  }
+
+  body>footer {
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 60%;
+    text-align: center;
+  }
+
+}
+
+
+
+
+@media (max-width: 650px) {
+
+  header>.header-menu {
+    display: none;
+  }
+
+  #mostrar-links {
+    display: flex;
+    color: white;
+    background-color: unset;
+    cursor: pointer;
+    justify-content: end;
+    align-items: center;
+  }
+
+  main>.main-oi {
+    padding-top: 15%;
+  }
+
+  main>.main-oi>.main-oi-sociais,
+  main>.main-oi>.main-oi-div>.main-oi-div-animation {
+    display: none;
+  }
+
+  main>#main-aboutme {
+    row-gap: 20%;
+    padding: 10% 10%;
+    font-size: 95%;
+  }
+
+  main>#main-aboutme>.main-aboutme-knowme-myskills {
+    flex-direction: column;
+  }
+
+  main>#main-aboutme>.main-aboutme-knowme-myskills>.main-aboutme-knowme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  main>#main-aboutme>.main-aboutme-knowme-myskills>.main-aboutme-myskills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  main>#main-aboutme>.main-aboutme-knowme-myskills>.main-aboutme-myskills>.main-aboutme-myskills-p {
+    justify-content: center;
+  }
+
+  main>.main-oi>.main-oi-div>.main-oi-div-paragrafo {
+    width: 80%;
+  }
+
+  main>#main-projetos {
+    padding: 10% 10%;
+    font-size: 95%;
+    row-gap: 20px;
+  }
+
+  main>#main-projetos>.main-projetos-h2 {
+    align-items: center;
+    text-align: center;
+  }
+
+  main>#main-projetos>.main-projetos-projetos1div,
+  main>#main-projetos>.main-projetos-projetos2div,
+  main>#main-projetos>.main-projetos-projetos3div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: none;
+  }
+
+  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3,
+  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3,
+  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3 {
+    width: 450px;
+    height: 350px;
+  }
+
+  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-img,
+  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-img,
+  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-img {
+    width: 350px;
+    height: 250px;
+    border: 10px solid black;
+  }
+
+  main>#main-contato {
+    padding: 10% 10%;
+    row-gap: 30px;
+  }
+
+  main>#main-contato>.main-contato-h2 {
+    font-size: 85%;
+  }
+
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div {
+    font-size: 70%;
+  }
+
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div input {
+    height: 40px;
+
+  }
+
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div textarea {
+    height: 150px;
+
+  }
+
+  body>footer>.footerh3nome-footerh3sociais {
+    flex-direction: column;
+    align-items: center;
+    line-height: 200%;
+  }
+
+  body>footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 55%;
+    text-align: center;
+  }
+
+  body>footer>.footerh3nome-footerh3sociais>.footer-h3-nome {
+    margin-bottom: 20px;
+  }
+
+  body>footer>.footerh3nome-footerh3sociais>.footer-h3-sociais>.footer-h3-sociais-img {
+    margin-top: 0px;
+  }
+
+  body>footer>.footerh3nome-footerh3sociais>.footer-h3-sociais {
+    align-items: center;
+  }
+
+  body>footer>.footerh3nome-footerh3sociais>.footer-h3-sociais h3 {
+    margin-right: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+  body {
+    font-size: 90%;
+    text-align: center;
+  }
+
+  main>.main-oi {
+    padding-top: 20%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-img,
+  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-img,
+  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-img {
+    width: 250px;
+    height: 150px;
+    border: 5px solid black;
+  }
+
+  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3,
+  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3,
+  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3 {
+    width: 250px;
+    height: 350px;
+    justify-content: space-evenly;
+  }
+
+  main>#main-contato {
+    padding: 10% 5%;
+  }
+
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div>.main-contato-formulario-div-nome,
+  .main-contato-formulario-div-email,
+  .main-contato-formulario-div-mensagem {
+    margin: 2px;
+    row-gap: 10px;
+    text-align: left;
+  }
+
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div>.main-contato-formulario-div-btn {
+    margin: 2px;
+  }
+}

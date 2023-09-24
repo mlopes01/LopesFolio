@@ -1,0 +1,908 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+.interaçao-de-menu {
+  position: fixed;
+  width: 100%;
+  margin-top: 95px;
+  text-transform: uppercase;
+}
+
+#lista-links {
+  display: none;
+  list-style: none;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+#lista-links li {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 80px;
+  border: 1px solid wheat;
+  padding-right: 50px;
+}
+
+body > header {
+  background-image: linear-gradient(rgb(2, 2, 12), rgb(3, 10, 75), rgb(6, 23, 179), rgb(6, 70, 247));
+  padding-left: 30px;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 95px;
+  position: fixed;
+}
+
+header > .header-logo {
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+}
+
+header > .header-logo > .header-logo-texto {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 5px;
+  min-width: 120px;
+}
+
+header > .header-logo > .header-logo-img {
+  min-width: 55px;
+  min-height: 55px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-image: url(../img/m\ lopes.jpg);
+  overflow: hidden;
+  background-position: auto auto;
+}
+
+header > .header-menu {
+  display: flex;
+  text-transform: uppercase;
+  padding-left: 30rem;
+  margin-right: 20px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+
+header > .header-menu a {
+  grid-column: 2/3;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+header a:hover {
+  color: rgb(128, 128, 248);
+}
+
+#mostrar-links {
+  display: none;
+}
+
+body > main {
+  display: flex;
+  flex-direction: column;
+}
+
+main > .main-oi {
+  background-image: linear-gradient(rgb(8, 8, 241), rgb(69, 69, 252), rgb(91, 91, 255), rgb(122, 122, 252));
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  padding-left: 9px;
+  padding-right: 20px;
+}
+
+main > .main-oi > .main-oi-div {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  padding-top: 13%;
+}
+
+main > .main-oi > .main-oi-div > .main-oi-div-h1 {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+}
+
+main > .main-oi > .main-oi-div > .main-oi-div-paragrafo {
+  width: 50vw;
+  text-align: center;
+  color: white;
+  line-height: 130%;
+  margin: 5%;
+}
+
+main > .main-oi > .main-oi-div > .main-oi-div-botao {
+  height: 80px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+main > .main-oi > .main-oi-div > .main-oi-div-botao > a {
+  border-radius: 10px;
+  background-color: aliceblue;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > .main-oi > .main-oi-div > .main-oi-div-botao > a:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+  margin-bottom: 6px;
+}
+
+main > .main-oi > .main-oi-div > .main-oi-div-animation {
+  border: 2px solid white;
+  border-radius: 40%;
+  width: 25px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+}
+
+main > .main-oi > .main-oi-div > .main-oi-div-animation > h2 {
+  border: 2px solid white;
+}
+
+@keyframes anim-scroll {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(26px);
+  }
+}
+main > .main-oi > .main-oi-div > .main-oi-div-animation > h2 {
+  animation: anim-scroll 1s infinite;
+}
+
+main > .main-oi > .main-oi-sociais {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+main > .main-oi > .main-oi-sociais a {
+  height: 60px;
+  width: 55px;
+  border-radius: 0px;
+  border: 10px solid white;
+  background-size: cover;
+  background-position: center;
+}
+
+main > .main-oi > .main-oi-sociais a:hover {
+  border-color: rgb(88, 88, 233);
+}
+
+main > .main-oi > .main-oi-sociais > .linkidin {
+  background-image: url("../img/linkdinlogo.jpg");
+}
+
+main > .main-oi > .main-oi-sociais > .github {
+  background-image: url("../img/githublogo.jpg");
+}
+
+main > .main-oi > .main-oi-sociais > .twiter {
+  background-image: url("../img/twiterlogo.jpg");
+}
+
+main > .main-oi > .main-oi-sociais > .youtube {
+  background-image: url("../img/YOUTUBE SEM FUNO.png");
+}
+
+main > .main-oi > .main-oi-sociais > .instagram {
+  background-image: url("../img/logo-instagram.png");
+}
+
+main > #main-aboutme {
+  background-image: linear-gradient(rgb(131, 131, 252), rgb(152, 152, 248), rgb(184, 184, 248), rgb(213, 213, 250));
+  display: flex;
+  flex-direction: column;
+  padding: 5% 20%;
+}
+
+main > #main-aboutme > .main-aboutme-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  align-items: center;
+  gap: 20px;
+}
+
+main > #main-aboutme > .main-aboutme-div > .main-aboutme-div-traço {
+  border: 3px solid blue;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+main > #main-aboutme > .main-aboutme-div > .main-aboutme-div-p {
+  text-align: center;
+  line-height: 130%;
+}
+
+main > #main-aboutme > .main-aboutme-knowme-myskills {
+  display: flex;
+  padding-top: 7%;
+  -moz-column-gap: 4%;
+       column-gap: 4%;
+}
+
+main > #main-aboutme > .main-abouteme-knowme-myskills > .main-aboutme-knowme {
+  display: flex;
+  flex-direction: column;
+}
+
+main > #main-aboutme > .main-aboutme-knowme-myskills > .main-aboutme-knowme > .main-aboutme-knowme-p1 {
+  line-height: 135%;
+  margin-bottom: 25px;
+}
+
+main > #main-aboutme > .main-aboutme-knowme-myskills > .main-aboutme-knowme > .main-aboutme-knowme-p {
+  margin-bottom: 15px;
+  margin-top: 40px;
+  line-height: 135%;
+}
+
+main > #main-aboutme > .main-aboutme-knowme-myskills > .main-aboutme-myskills > .main-aboutme-myskills-p {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 7%;
+}
+
+main > #main-aboutme > .main-aboutme-knowme-myskills > .main-aboutme-myskills > .main-aboutme-myskills-p p {
+  border-radius: 10px;
+  background-color: rgb(34, 9, 173);
+  color: white;
+  padding: 2%;
+  margin: 1%;
+}
+
+main > #main-aboutme > .main-aboutme-knowme-myskills > .main-aboutme-knowme > .main-aboutme-knowme-botao {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+main > #main-aboutme > .main-aboutme-knowme-myskills > .main-aboutme-knowme > .main-aboutme-knowme-botao > p {
+  width: 180px;
+  height: 60px;
+  border-radius: 7px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+main > #main-aboutme > .main-aboutme-knowme-myskills > .main-aboutme-knowme > .main-aboutme-knowme-botao > p:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+  margin-bottom: 6px;
+}
+
+main > #main-projetos {
+  background-image: linear-gradient(rgb(217, 217, 248), rgb(230, 230, 248), rgb(206, 206, 247));
+  display: flex;
+  flex-direction: column;
+  padding: 5% 10% 5% 10%;
+  gap: 80px;
+}
+
+main > #main-projetos > .main-projetos-h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+main > #main-projetos > .main-projetos-h2 p {
+  line-height: 135%;
+}
+
+main > #main-projetos > .main-projetos-h2 > h2 {
+  display: flex;
+  align-items: end;
+}
+
+main > #main-projetos > .main-projetos-h2 div {
+  border: 3px solid blue;
+  border-radius: 5px;
+  width: 30px;
+  height: 5px;
+}
+
+main > #main-projetos > .main-projetos-projetos1div {
+  display: flex;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  justify-content: space-evenly;
+}
+
+main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-img {
+  border: 20px solid black;
+  width: 650px;
+  height: 450px;
+  background-image: url(../img/kofmemory.png);
+  background-position: cover;
+  background-size: 100% 100%;
+}
+
+main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-h3 {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-h3 p {
+  line-height: 135%;
+}
+
+main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-h3 > .main-projetos-botao {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-h3 > .main-projetos-botao a {
+  width: 180px;
+  height: 60px;
+  border-radius: 7px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-h3 > .main-projetos-botao a:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+  margin-bottom: 6px;
+}
+
+main > #main-projetos > .main-projetos-projetos2div {
+  display: flex;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  justify-content: space-evenly;
+}
+
+main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-img {
+  border: 20px solid black;
+  width: 650px;
+  height: 450px;
+  background-image: url(../img/leyoutimagem.png);
+  background-position: cover;
+  background-size: 100% 100%;
+}
+
+main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-h3 {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-h3 p {
+  line-height: 135%;
+}
+
+main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-h3 > .main-projetos-botao {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-h3 > .main-projetos-botao a {
+  width: 180px;
+  height: 60px;
+  border-radius: 7px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-h3 > .main-projetos-botao a:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+  margin-bottom: 6px;
+}
+
+main > #main-projetos > .main-projetos-projetos3div {
+  display: flex;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  justify-content: space-evenly;
+}
+
+main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-img {
+  border: 20px solid black;
+  width: 650px;
+  height: 450px;
+  background-image: url(../img/homer_pensando.jpg);
+  background-position: cover;
+  background-size: 100% 100%;
+}
+
+main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-h3 {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-h3 > .main-projetos-botao {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-h3 > .main-projetos-botao a {
+  width: 180px;
+  height: 60px;
+  border-radius: 7px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-h3 p {
+  line-height: 135%;
+}
+
+main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-h3 > .main-projetos-botao a:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+  margin-bottom: 6px;
+}
+
+main > #main-projetos .a:hover {
+  color: blue;
+}
+
+main > #main-contato {
+  background-image: linear-gradient(rgb(70, 70, 241), rgb(12, 36, 250), rgb(5, 18, 138), rgb(1, 12, 41));
+  display: flex;
+  flex-direction: column;
+  padding: 5% 28%;
+  row-gap: 50px;
+}
+
+main > #main-contato > .main-contato-h2 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+main > #main-contato > .main-contato-h2 > div {
+  border: 3px solid white;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+main > #main-contato > .main-contato-h2 > p {
+  text-align: center;
+  line-height: 135%;
+}
+
+main > #main-contato > .main-contato-formulario {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+main > #main-contato > .main-contato-formulario > .main-contato-formulario-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+main > #main-contato > .main-contato-formulario > .main-contato-formulario-div > .main-contato-formulario-div-nome,
+.main-contato-formulario-div-email,
+.main-contato-formulario-div-mensagem {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  row-gap: 15px;
+}
+
+.main-contato-formulario-div-mensagem > textarea {
+  font-family: sans-serif;
+}
+
+main > #main-contato > .main-contato-formulario > .main-contato-formulario-div input {
+  height: 60px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+main > #main-contato > .main-contato-formulario > .main-contato-formulario-div textarea {
+  border-radius: 10px;
+  height: 255px;
+  padding: 10px;
+}
+
+main > #main-contato > .main-contato-formulario > .main-contato-formulario-div > .main-contato-formulario-div-btn {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  align-self: end;
+  margin: 15px;
+}
+
+main > #main-contato > .main-contato-formulario > .main-contato-formulario-div > .main-contato-formulario-div-btn > button {
+  width: 180px;
+  background-color: blue;
+  height: 60px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+main > #main-contato > .main-contato-formulario > .main-contato-formulario-div > .main-contato-formulario-div-btn > button:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+  margin-bottom: 6px;
+}
+
+body > footer {
+  background-image: linear-gradient(rgb(1, 11, 37), rgb(7, 7, 7), rgb(5, 5, 5), rgb(2, 1, 8));
+  display: flex;
+  flex-direction: column;
+  padding: 5% 20%;
+}
+
+body > footer > .footerh3nome-footerh3sociais {
+  display: flex;
+  justify-content: space-between;
+}
+
+body > footer > .footerh3nome-footerh3sociais > .footer-h3-nome {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 143px;
+}
+
+body > footer > .footerh3nome-footerh3sociais > .footer-h3-nome p {
+  line-height: 200%;
+}
+
+body > footer > .footerh3nome-footerh3sociais > .footer-h3-sociais {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+body > footer > .footerh3nome-footerh3sociais > .footer-h3-sociais h3 {
+  margin-right: 56px;
+}
+
+body > footer > .footerh3nome-footerh3sociais > .footer-h3-sociais > .footer-h3-sociais-img {
+  display: flex;
+  flex-direction: row-reverse;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+  margin-top: 30px;
+}
+
+body > footer > .footer-traço {
+  border-bottom: 1px solid rgba(245, 245, 245, 0.603);
+  display: flex;
+  margin-top: 8%;
+}
+
+footer > .footercopyright {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+footer > .footercopyright > a {
+  color: white;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+@media (max-width: 1200px) {
+  header > .header-menu {
+    padding-left: 20rem;
+  }
+  main > .main-oi > .main-oi-div > .main-oi-div-h1 {
+    text-align: center;
+  }
+  main > #main-projetos {
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 95%;
+  }
+  main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-img,
+  main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-img,
+  main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-img {
+    width: 550px;
+    height: 400px;
+  }
+  main > #main-contato {
+    padding: 7% 20%;
+  }
+  body > footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 80%;
+  }
+  body > footer > .footerh3nome-footerh3sociais {
+    -moz-column-gap: 50%;
+         column-gap: 50%;
+  }
+}
+@media (max-width: 950px) {
+  header > .header-menu {
+    padding-left: 7.5rem;
+    font-size: 80%;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  main > .main-oi {
+    padding-top: 6%;
+  }
+  main > .main-oi > .main-oi-sociais {
+    padding-left: 0%;
+  }
+  main > #main-aboutme {
+    padding: 5% 8%;
+  }
+  main > #main-projetos {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 98%;
+  }
+  main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-img,
+  main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-img,
+  main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-img {
+    width: 450px;
+    height: 300px;
+  }
+  main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-h3,
+  main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-h3,
+  main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-h3 {
+    width: 450px;
+    height: 350px;
+  }
+  main > #main-contato > .main-contato-formulario > .main-contato-formulario-div {
+    font-size: 80%;
+    gap: 0px;
+  }
+  main > #main-contato {
+    padding: 8% 15%;
+  }
+  body > footer {
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 60%;
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  header > .header-menu {
+    display: none;
+  }
+  #mostrar-links {
+    display: flex;
+    color: white;
+    background-color: unset;
+    cursor: pointer;
+    justify-content: end;
+    align-items: center;
+  }
+  main > .main-oi {
+    padding-top: 15%;
+  }
+  main > .main-oi > .main-oi-sociais,
+  main > .main-oi > .main-oi-div > .main-oi-div-animation {
+    display: none;
+  }
+  main > #main-aboutme {
+    row-gap: 20%;
+    padding: 10% 10%;
+    font-size: 95%;
+  }
+  main > #main-aboutme > .main-aboutme-knowme-myskills {
+    flex-direction: column;
+  }
+  main > #main-aboutme > .main-aboutme-knowme-myskills > .main-aboutme-knowme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+  }
+  main > #main-aboutme > .main-aboutme-knowme-myskills > .main-aboutme-myskills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+  }
+  main > #main-aboutme > .main-aboutme-knowme-myskills > .main-aboutme-myskills > .main-aboutme-myskills-p {
+    justify-content: center;
+  }
+  main > .main-oi > .main-oi-div > .main-oi-div-paragrafo {
+    width: 80%;
+  }
+  main > #main-projetos {
+    padding: 10% 10%;
+    font-size: 95%;
+    row-gap: 20px;
+  }
+  main > #main-projetos > .main-projetos-h2 {
+    align-items: center;
+    text-align: center;
+  }
+  main > #main-projetos > .main-projetos-projetos1div,
+  main > #main-projetos > .main-projetos-projetos2div,
+  main > #main-projetos > .main-projetos-projetos3div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: none;
+  }
+  main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-h3,
+  main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-h3,
+  main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-h3 {
+    width: 450px;
+    height: 350px;
+  }
+  main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-img,
+  main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-img,
+  main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-img {
+    width: 350px;
+    height: 250px;
+    border: 10px solid black;
+  }
+  main > #main-contato {
+    padding: 10% 10%;
+    row-gap: 30px;
+  }
+  main > #main-contato > .main-contato-h2 {
+    font-size: 85%;
+  }
+  main > #main-contato > .main-contato-formulario > .main-contato-formulario-div {
+    font-size: 70%;
+  }
+  main > #main-contato > .main-contato-formulario > .main-contato-formulario-div input {
+    height: 40px;
+  }
+  main > #main-contato > .main-contato-formulario > .main-contato-formulario-div textarea {
+    height: 150px;
+  }
+  body > footer > .footerh3nome-footerh3sociais {
+    flex-direction: column;
+    align-items: center;
+    line-height: 200%;
+  }
+  body > footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 55%;
+    text-align: center;
+  }
+  body > footer > .footerh3nome-footerh3sociais > .footer-h3-nome {
+    margin-bottom: 20px;
+  }
+  body > footer > .footerh3nome-footerh3sociais > .footer-h3-sociais > .footer-h3-sociais-img {
+    margin-top: 0px;
+  }
+  body > footer > .footerh3nome-footerh3sociais > .footer-h3-sociais {
+    align-items: center;
+  }
+  body > footer > .footerh3nome-footerh3sociais > .footer-h3-sociais h3 {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 90%;
+    text-align: center;
+  }
+  main > .main-oi {
+    padding-top: 20%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-img,
+  main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-img,
+  main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-img {
+    width: 250px;
+    height: 150px;
+    border: 5px solid black;
+  }
+  main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-h3,
+  main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-h3,
+  main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-h3 {
+    width: 250px;
+    height: 350px;
+    justify-content: space-evenly;
+  }
+  main > #main-contato {
+    padding: 10% 5%;
+  }
+  main > #main-contato > .main-contato-formulario > .main-contato-formulario-div > .main-contato-formulario-div-nome,
+  .main-contato-formulario-div-email,
+  .main-contato-formulario-div-mensagem {
+    margin: 2px;
+    row-gap: 10px;
+    text-align: left;
+  }
+  main > #main-contato > .main-contato-formulario > .main-contato-formulario-div > .main-contato-formulario-div-btn {
+    margin: 2px;
+  }
+}/*# sourceMappingURL=index.css.map */

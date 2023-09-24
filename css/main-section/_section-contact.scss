@@ -1,0 +1,90 @@
+main>#main-contato {
+    background-image: linear-gradient(rgb(70, 70, 241), rgb(12, 36, 250), rgb(5, 18, 138), rgb(1, 12, 41));
+    display: flex;
+    flex-direction: column;
+    padding: 5% 28%;
+    row-gap: 50px;
+  }
+  
+  main>#main-contato>.main-contato-h2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  main>#main-contato>.main-contato-h2>div {
+    border: 3px solid white;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+  }
+  
+  main>#main-contato>.main-contato-h2>p {
+    text-align: center;
+    line-height: 135%;
+  }
+  
+  main>#main-contato>.main-contato-formulario {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div>.main-contato-formulario-div-nome,
+  .main-contato-formulario-div-email,
+  .main-contato-formulario-div-mensagem {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    row-gap: 15px;
+  }
+  
+  .main-contato-formulario-div-mensagem>textarea {
+    font-family: sans-serif;
+  }
+  
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div input {
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div textarea {
+    border-radius: 10px;
+    height: 255px;
+    padding: 10px;
+  }
+  
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div>.main-contato-formulario-div-btn {
+    width: 180px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    align-self: end;
+    margin: 15px;
+  }
+  
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div>.main-contato-formulario-div-btn>button {
+    width: 180px;
+    background-color: blue;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  main>#main-contato>.main-contato-formulario>.main-contato-formulario-div>.main-contato-formulario-div-btn>button:hover {
+    transition-duration: 500ms;
+    box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+    margin-bottom: 6px;
+  }
