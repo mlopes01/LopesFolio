@@ -76,7 +76,7 @@ header > .header-logo > .header-logo-img {
   min-height: 55px;
   border: 2px solid black;
   border-radius: 50%;
-  background-image: url(../img/m\ lopes.jpg);
+  background-image: url("../../img/m lopes.jpg");
   overflow: hidden;
   background-position: auto auto;
 }
@@ -217,23 +217,23 @@ main > .main-oi > .main-oi-sociais a:hover {
 }
 
 main > .main-oi > .main-oi-sociais > .linkidin {
-  background-image: url("../img/linkdinlogo.jpg");
+  background-image: url("../../img/linkdinlogo.jpg");
 }
 
 main > .main-oi > .main-oi-sociais > .github {
-  background-image: url("../img/githublogo.jpg");
+  background-image: url("../../img/githublogo.jpg");
 }
 
 main > .main-oi > .main-oi-sociais > .twiter {
-  background-image: url("../img/twiterlogo.jpg");
+  background-image: url("../../img/twiterlogo.jpg");
 }
 
 main > .main-oi > .main-oi-sociais > .youtube {
-  background-image: url("../img/YOUTUBE SEM FUNO.png");
+  background-image: url("../../img/YOUTUBE SEM FUNO.png");
 }
 
 main > .main-oi > .main-oi-sociais > .instagram {
-  background-image: url("../img/logo-instagram.png");
+  background-image: url("../../img/logo-instagram.png");
 }
 
 main > #main-aboutme {
@@ -366,7 +366,7 @@ main > #main-projetos > .main-projetos-projetos1div > .main-projetos-projetos1-i
   border: 20px solid black;
   width: 650px;
   height: 450px;
-  background-image: url(../../img/kofmemory.png);
+  background-image: url("../../img/kofmemory.png");
   background-position: cover;
   background-size: 100% 100%;
 }
@@ -420,7 +420,7 @@ main > #main-projetos > .main-projetos-projetos2div > .main-projetos-projetos2-i
   border: 20px solid black;
   width: 650px;
   height: 450px;
-  background-image: url(../../img/leyoutimagem.png);
+  background-image: url("../../img/leyoutimagem.png");
   background-position: cover;
   background-size: 100% 100%;
 }
@@ -474,7 +474,7 @@ main > #main-projetos > .main-projetos-projetos3div > .main-projetos-projetos3-i
   border: 20px solid black;
   width: 650px;
   height: 450px;
-  background-image: url(../../img/calculadora.png);
+  background-image: url("../../img/calculadora.png");
   background-position: cover;
   background-size: 100% 100%;
 }

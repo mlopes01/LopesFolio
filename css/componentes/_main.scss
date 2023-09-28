@@ -1,150 +1,132 @@
 body>main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+main>.main-oi {
+  background-image: linear-gradient(rgb(8, 8, 241), rgb(69, 69, 252), rgb(91, 91, 255), rgb(122, 122, 252));
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  padding-left: 9px;
+  padding-right: 20px;
+}
+
+main>.main-oi>.main-oi-div {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  padding-top: 13%;
+}
+
+main>.main-oi>.main-oi-div>.main-oi-div-h1 {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+}
+
+main>.main-oi>.main-oi-div>.main-oi-div-paragrafo {
+  width: 50vw;
+  text-align: center;
+  color: white;
+  line-height: 130%;
+  margin: 5%;
+}
+
+main>.main-oi>.main-oi-div>.main-oi-div-botao {
+  height: 80px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+main>.main-oi>.main-oi-div>.main-oi-div-botao>a {
+  border-radius: 10px;
+  background-color: aliceblue;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main>.main-oi>.main-oi-div>.main-oi-div-botao>a:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+  margin-bottom: 6px;
+}
+
+main>.main-oi>.main-oi-div>.main-oi-div-animation {
+  border: 2px solid white;
+  border-radius: 40%;
+  width: 25px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+}
+
+main>.main-oi>.main-oi-div>.main-oi-div-animation>h2 {
+  border: 2px solid white;
+}
+
+@keyframes anim-scroll {
+  from {
+    transform: translateY(0px);
   }
 
-  main>.main-oi {
-    background-image: linear-gradient(rgb(8, 8, 241), rgb(69, 69, 252), rgb(91, 91, 255), rgb(122, 122, 252));
-    display: flex;
-    flex-direction: row;
-    color: white;
-    padding-top: 1%;
-    padding-bottom: 5%;
-    padding-left: 9px;
-    padding-right: 20px;
+  to {
+    transform: translateY(26px);
   }
-  
-  main>.main-oi>.main-oi-div {
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    align-items: center;
-    padding-top: 13%;
-  }
-  
-  main>.main-oi>.main-oi-div>.main-oi-div-h1 {
-    width: 45vw;
-    display: flex;
-    justify-content: center;
-  }
-  
-  main>.main-oi>.main-oi-div>.main-oi-div-paragrafo {
-    width: 50vw;
-    text-align: center;
-    color: white;
-    line-height: 130%;
-    margin: 5%;
-  }
-  
-  main>.main-oi>.main-oi-div>.main-oi-div-botao {
-    height: 80px;
-    width: 230px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 100px;
-  }
-  
-  main>.main-oi>.main-oi-div>.main-oi-div-botao>a {
-    border-radius: 10px;
-    background-color: aliceblue;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  main>.main-oi>.main-oi-div>.main-oi-div-botao>a:hover {
-    transition-duration: 500ms;
-    box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
-    margin-bottom: 6px;
-  }
-  
-  main>.main-oi>.main-oi-div>.main-oi-div-animation {
-    border: 2px solid white;
-    border-radius: 40%;
-    width: 25px;
-    height: 35px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20%;
-  }
-  
-  main>.main-oi>.main-oi-div>.main-oi-div-animation>h2 {
-    border: 2px solid white;
-  }
-  
-  @keyframes anim-scroll {
-    from {
-      transform: translateY(0px);
-    }
-  
-    to {
-      transform: translateY(26px);
-    }
-  }
-  
-  main>.main-oi>.main-oi-div>.main-oi-div-animation>h2 {
-    animation: anim-scroll 1s infinite;
-  }
-  
-  main>.main-oi>.main-oi-sociais {
-    height: 100%;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2px;
-  }
-  
-  main>.main-oi>.main-oi-sociais a {
-    height: 60px;
-    width: 55px;
-    border-radius: 0px;
-    border: 10px solid white;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  main>.main-oi>.main-oi-sociais a:hover {
-    border-color: rgb(88, 88, 233);
-  }
-  
-  main>.main-oi>.main-oi-sociais>.linkidin {
-    background-image: url('../img/linkdinlogo.jpg');
-  }
-  
-  main>.main-oi>.main-oi-sociais>.github {
-    background-image: url('../img/githublogo.jpg');
-  }
-  
-  main>.main-oi>.main-oi-sociais>.twiter {
-    background-image: url('../img/twiterlogo.jpg');
-  }
-  
-  main>.main-oi>.main-oi-sociais>.youtube {
-    background-image: url('../img/YOUTUBE\ SEM\ FUNO.png');
-  }
-  
-  main>.main-oi>.main-oi-sociais>.instagram {
-    background-image: url('../img/logo-instagram.png');
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- 
-  
-  
-  
-  
-  
-  
-  
+}
+
+main>.main-oi>.main-oi-div>.main-oi-div-animation>h2 {
+  animation: anim-scroll 1s infinite;
+}
+
+main>.main-oi>.main-oi-sociais {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+main>.main-oi>.main-oi-sociais a {
+  height: 60px;
+  width: 55px;
+  border-radius: 0px;
+  border: 10px solid white;
+  background-size: cover;
+  background-position: center;
+}
+
+main>.main-oi>.main-oi-sociais a:hover {
+  border-color: rgb(88, 88, 233);
+}
+
+main>.main-oi>.main-oi-sociais>.linkidin {
+  background-image: url('../../img/linkdinlogo.jpg');
+}
+
+main>.main-oi>.main-oi-sociais>.github {
+  background-image: url('../../img/githublogo.jpg');
+}
+
+main>.main-oi>.main-oi-sociais>.twiter {
+  background-image: url('../../img/twiterlogo.jpg');
+}
+
+main>.main-oi>.main-oi-sociais>.youtube {
+  background-image: url('../../img/YOUTUBE\ SEM\ FUNO.png');
+}
+
+main>.main-oi>.main-oi-sociais>.instagram {
+  background-image: url('../../img/logo-instagram.png');
+}
