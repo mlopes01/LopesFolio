@@ -1,197 +1,197 @@
 main>#main-projetos {
-    background-image: linear-gradient(rgb(217, 217, 248), rgb(230, 230, 248), rgb(206, 206, 247));
-    display: flex;
-    flex-direction: column;
-    padding: 5% 10% 5% 10%;
-    gap: 80px;
-  }
-  
-  main>#main-projetos>.main-projetos-h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-  }
-  
-  main>#main-projetos>.main-projetos-h2 p {
-    line-height: 135%;
-  }
-  
-  main>#main-projetos>.main-projetos-h2>h2 {
-    display: flex;
-    align-items: end;
-  }
-  
-  main>#main-projetos>.main-projetos-h2 div {
-    border: 3px solid blue;
-    border-radius: 5px;
-    width: 30px;
-    height: 5px;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos1div {
-    display: flex;
-    column-gap: 3%;
-    justify-content: space-evenly;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-img {
-    border: 20px solid black;
-    width: 650px;
-    height: 450px;
-    background-image: url(../img/kofmemory.png);
-    background-position: cover;
-    background-size: 100% 100%;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3 {
-    width: 600px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-  
-  }
-  
-  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3 p {
-    line-height: 135%;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3>.main-projetos-botao {
-    width: 180px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3>.main-projetos-botao a {
-    width: 180px;
-    height: 60px;
-    border-radius: 7px;
-    background-color: blue;
-    color: white;
-    display: flex;
-    place-content: center;
-    align-items: center;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3>.main-projetos-botao a:hover {
-    transition-duration: 500ms;
-    box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
-    margin-bottom: 6px;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos2div {
-    display: flex;
-    column-gap: 3%;
-    justify-content: space-evenly;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-img {
-    border: 20px solid black;
-    width: 650px;
-    height: 450px;
-    background-image: url(../img/leyoutimagem.png);
-    background-position: cover;
-    background-size: 100% 100%;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3 {
-    width: 600px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-  
-  }
-  
-  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3 p {
-    line-height: 135%;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3>.main-projetos-botao {
-    width: 180px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3>.main-projetos-botao a {
-    width: 180px;
-    height: 60px;
-    border-radius: 7px;
-    background-color: blue;
-    color: white;
-    display: flex;
-    place-content: center;
-    align-items: center;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3>.main-projetos-botao a:hover {
-    transition-duration: 500ms;
-    box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
-    margin-bottom: 6px;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos3div {
-    display: flex;
-    column-gap: 3%;
-    justify-content: space-evenly;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-img {
-    border: 20px solid black;
-    width: 650px;
-    height: 450px;
-    background-image: url(../img/homer_pensando.jpg);
-    background-position: cover;
-    background-size: 100% 100%;
-  
-  }
-  
-  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3 {
-    width: 600px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-  
-  }
-  
-  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3>.main-projetos-botao {
-    width: 180px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3>.main-projetos-botao a {
-    width: 180px;
-    height: 60px;
-    border-radius: 7px;
-    background-color: blue;
-    color: white;
-    display: flex;
-    place-content: center;
-    align-items: center;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3 p {
-    line-height: 135%;
-  }
-  
-  main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3>.main-projetos-botao a:hover {
-    transition-duration: 500ms;
-    box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
-    margin-bottom: 6px;
-  }
-  
-  main>#main-projetos .a:hover {
-    color: blue;
-  }
+  background-image: linear-gradient(rgb(217, 217, 248), rgb(230, 230, 248), rgb(206, 206, 247));
+  display: flex;
+  flex-direction: column;
+  padding: 5% 10% 5% 10%;
+  gap: 80px;
+}
+
+main>#main-projetos>.main-projetos-h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+main>#main-projetos>.main-projetos-h2 p {
+  line-height: 135%;
+}
+
+main>#main-projetos>.main-projetos-h2>h2 {
+  display: flex;
+  align-items: end;
+}
+
+main>#main-projetos>.main-projetos-h2 div {
+  border: 3px solid blue;
+  border-radius: 5px;
+  width: 30px;
+  height: 5px;
+}
+
+main>#main-projetos>.main-projetos-projetos1div {
+  display: flex;
+  column-gap: 3%;
+  justify-content: space-evenly;
+}
+
+main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-img {
+  border: 20px solid black;
+  width: 650px;
+  height: 450px;
+  background-image: url(../img/kofmemory.png);
+  background-position: cover;
+  background-size: 100% 100%;
+}
+
+main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3 {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3 p {
+  line-height: 135%;
+}
+
+main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3>.main-projetos-botao {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3>.main-projetos-botao a {
+  width: 180px;
+  height: 60px;
+  border-radius: 7px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+main>#main-projetos>.main-projetos-projetos1div>.main-projetos-projetos1-h3>.main-projetos-botao a:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+  margin-bottom: 6px;
+}
+
+main>#main-projetos>.main-projetos-projetos2div {
+  display: flex;
+  column-gap: 3%;
+  justify-content: space-evenly;
+}
+
+main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-img {
+  border: 20px solid black;
+  width: 650px;
+  height: 450px;
+  background-image: url(../img/leyoutimagem.png);
+  background-position: cover;
+  background-size: 100% 100%;
+}
+
+main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3 {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3 p {
+  line-height: 135%;
+}
+
+main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3>.main-projetos-botao {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3>.main-projetos-botao a {
+  width: 180px;
+  height: 60px;
+  border-radius: 7px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+main>#main-projetos>.main-projetos-projetos2div>.main-projetos-projetos2-h3>.main-projetos-botao a:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+  margin-bottom: 6px;
+}
+
+main>#main-projetos>.main-projetos-projetos3div {
+  display: flex;
+  column-gap: 3%;
+  justify-content: space-evenly;
+}
+
+main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-img {
+  border: 20px solid black;
+  width: 650px;
+  height: 450px;
+  background-image: url(../../img/calculadora.png);
+  background-position: cover;
+  background-size: 100% 100%;
+
+}
+
+main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3 {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3>.main-projetos-botao {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3>.main-projetos-botao a {
+  width: 180px;
+  height: 60px;
+  border-radius: 7px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3 p {
+  line-height: 135%;
+}
+
+main>#main-projetos>.main-projetos-projetos3div>.main-projetos-projetos3-h3>.main-projetos-botao a:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+  margin-bottom: 6px;
+}
+
+main>#main-projetos .a:hover {
+  color: blue;
+}
